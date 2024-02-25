@@ -6,7 +6,7 @@ function updateTime() {
     let romeTimeElement = romeElement.querySelector(".time");
     let romeTime = moment().tz("Europe/Rome");
     romeDateElement.innerHTML = romeTime.format("MMMM Do YYYY");
-    romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+    romeTimeElement.innerHTML = romeTime.format("HH:mm:ss");
   }
 
   //Tokyo
@@ -16,9 +16,7 @@ function updateTime() {
     let tokyoTimeElement = tokyoElement.querySelector(".time");
     let tokyoTime = moment().tz("Asia/Tokyo");
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
-    tokyoTimeElement.innerHTML = tokyoTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    tokyoTimeElement.innerHTML = tokyoTime.format("HH:mm:ss");
   }
 }
 
@@ -36,9 +34,7 @@ function updateCity(event) {
             <h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
-          <div class="time">${cityTime.format(
-            "h:mm:ss"
-          )} <small>${cityTime.format("A")}</small></div>
+          <div class="time">${cityTime.format("HH:mm:ss")} </div>
         </div>
         <a href="/">All cities</a>
   `;
