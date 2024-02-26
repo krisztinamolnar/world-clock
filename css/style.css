@@ -1,20 +1,8 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #f1efed;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/640/original/77.jpg?1708896319");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.6;
-  z-index: -1;
-}
+
 h1 {
   text-align: center;
   font-family: sans-serif;
@@ -22,7 +10,7 @@ h1 {
 }
 h2 {
   margin: 0 0 5px;
-  font-size: 25px;
+  font-size: 28px;
 }
 select {
   display: block;
@@ -34,20 +22,24 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: #fce0cc;
+  background: linear-gradient(
+    171.8deg,
+    rgb(238, 156, 167, 0.7) 13.8%,
+    rgb(246, 204, 162, 0.7) 82.6%
+  );
 
   padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
   border-radius: 10px;
   /*color: rgb(49, 7, 10);*/
-  color: #222831;
+  color: #310101;
 }
 .city {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(110, 110, 110, 0.3);
 }
 .city:last-child {
   border: none;
@@ -57,7 +49,7 @@ select {
   font-weight: bold;
 }
 .date {
-  color: rgb(128, 124, 125);
+  color: #746565;
   font-weight: 500;
 }
 time.small {
